@@ -1,0 +1,87 @@
+#Search {
+  position: fixed;
+  top: 1.6rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  //   overflow: hidden;
+  width: 100%;
+  left: 0;
+
+  .am-search {
+    background: #444;
+    height: 0.88rem;
+  }
+  .am-search-input,
+  .am-search-synthetic-ph {
+    background-color: #333;
+    height: 0.56rem;
+  }
+  .am-search-value {
+    color: #f3f3f3;
+    height: 0.56rem;
+    font-size: 0.3rem;
+    padding: 0 0.56rem 0 0.7rem;
+  }
+  .am-search-clear {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-size: 0.3rem 0.3rem;
+    padding: 0.13rem;
+  }
+  .am-search-synthetic-ph-container {
+    height: 0.56rem;
+    line-height: 0.56rem;
+  }
+  .am-search-synthetic-ph-icon {
+    vertical-align: -0.05rem;
+    background-size: 0.3rem auto;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.12rem;
+  }
+  .search_content {
+    position: absolute;
+    top: 2.19rem;
+    width: 100%;
+    bottom: 0.2rem;
+    li {
+      position: relative;
+      height: 1.1rem;
+      padding-left: 1.12rem;
+      overflow: hidden;
+      .icon-music1 {
+        position: absolute;
+        top: 0.36rem;
+        left: 0.36rem;
+        width: 0.44rem;
+        height: 0.4rem;
+        background-position: 0 0;
+        color: pink;
+      }
+      .main_tit {
+        margin: 0.2rem 0 2px;
+        line-height: 0.36rem;
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: #fff;
+      }
+      .sub_tit,
+      .main_tit {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .sub_tit {
+        color: rgb(180, 162, 162);
+      }
+    }
+  }
+  .am-button {
+    background: #333;
+    color: hsla(0, 0%, 100%, 0.3);
+    height: 0.94rem;
+    line-height: 0.94rem;
+  }
+}
+

@@ -1,0 +1,60 @@
+.newAlbumStar {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  position: relative;
+  margin-top: 0.28rem;
+  color:#fff;
+  .newAlbum-title {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 0.32rem;
+   
+      margin-bottom: 0.22rem;
+      font-weight: 400;
+      display: inline-block;
+    }
+  }
+  .album-component {
+   overflow: hidden;
+   overflow-x: auto;
+    a {
+      cursor: pointer;
+    }
+    ul {
+      width: 300%;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: space-around;
+      li {
+        width: 10%;
+        float: left;
+        margin-bottom: 0.2rem;
+        padding-right: .03rem;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      h3 {
+        font-size: 0.28rem;
+        font-weight: 400;
+        color: #fff;
+      }
+      p {
+        font-size: 0.24rem;
+        color: hsla(0,0%,100%,.5)
+      }
+      h3,
+      p {
+        margin-top: 0.15rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

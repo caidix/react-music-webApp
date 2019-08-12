@@ -1,0 +1,103 @@
+#MinPlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1rem;
+  line-height: 1rem;
+  z-index: 999;
+  display: flex;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  width: 100%;
+  .minPlay{
+    display: flex;
+  }
+  .music-icon {
+    margin-top: 0.1rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 0.8rem;
+    flex: 0 0 0.8rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    padding: 0 0.4rem;
+
+    .imgWrapper {
+      width: 100%;
+      height: 100%;
+      animation: rotate 18s infinite linear;
+      img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+      &.running {
+        animation-play-state: running;
+      }
+      &.paused {
+        animation-play-state: paused;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  .music-text {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    line-height: 0.4rem;
+    overflow: hidden;
+    .music-desc,
+    .music-name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 400;
+      vertical-align: baseline;
+    }
+    .music-name {
+      margin-bottom: 0.04rem;
+      font-size: 0.28rem;
+      color: #fff;
+    }
+    .music-desc {
+      font-size: 0.24rem;
+      color: hsla(0, 0%, 100%, 0.3);
+    }
+  }
+  .control {
+    -webkit-box-flex: 0;
+    flex: 0 0 0.6rem;
+    width: 0.6rem;
+    padding: 0 0.2rem;
+    line-height: 1rem;
+    .progress-circle {
+      position: relative;
+    }
+    .iconfont {
+      font-size: 0.64rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: rgba(255, 205, 49, 0.5);
+    }
+  }
+}

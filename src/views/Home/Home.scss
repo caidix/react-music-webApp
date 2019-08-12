@@ -1,0 +1,12 @@
+#Home {
+  position: fixed;
+  top: 1.6rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  left: 0;
+    background: #222;
+}

@@ -1,0 +1,62 @@
+#rankList {
+  position: fixed;
+  top: 1.6rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  background-color: #222;
+  .rank-list {
+    vertical-align: baseline;
+    line-height: 26px;
+
+    .rank-list-item {
+      display: flex;
+      margin: 0 0.4rem;
+      padding-top: 0.4rem;
+      height: 2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .rl-img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 2rem;
+      flex: 0 0 2rem;
+      width: 2rem;
+      height: 2rem;
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    .song-list {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 0 0.4rem;
+      height: 2rem;
+      overflow: hidden;
+      background: hsla(0,0%,100%,.1);
+      color: hsla(0, 0%, 100%, 0.8);
+      font-size: 0.26rem;
+      .song {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 0.52rem;
+      }
+    }
+  }
+}

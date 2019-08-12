@@ -1,0 +1,56 @@
+.newPlayerStar {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  position: relative;
+  margin-top: 0.5rem;
+  left: 0;
+  top: 0;
+  
+  .player-title {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 0.32rem;
+      color: #fff;
+      margin-bottom: 0.22rem;
+      font-weight: 400;
+      display: inline-block;
+    }
+  }
+  .player-component {
+    a {
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: space-around;
+      li {
+        width: 47%;
+        float: left;
+        margin-bottom: 0.3rem;
+        background: #333;
+        &:nth-of-type(odd) img {
+          border-radius: 0 10px 0 10px;
+        }
+        &:nth-of-type(even) img {
+          border-radius: 10px 0 10px 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      h3 {
+        font-size: 0.28rem;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 0.15rem;
+        margin: 0.1rem 0.1rem;
+      }
+    }
+  }
+}

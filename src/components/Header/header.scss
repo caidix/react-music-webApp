@@ -1,0 +1,36 @@
+#header {
+  height: 0.8rem;
+  width: 100%;
+  //background-color:#222;
+  // background-color: rgb(14, 1, 1);
+  // background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.07) 50%, transparent 50%),
+  //   linear-gradient(90deg, rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+  //   linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+  //   linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+  // background-size: 13px, 29px, 37px, 54px;
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #222;
+  background-size: 16px 16px;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  line-height: 0.8rem;
+  top: 0;
+  left: 0;
+  h1 {
+    font-size: 1.5em;
+    color: #fff;
+    font-family: "仿宋";
+    // font-weight: 500;
+  }
+  .icon-home {
+    display: block;
+    position: absolute;
+    right: 0.2rem;
+    font-size: 0.4rem;
+    color: #fff;
+  }
+}
